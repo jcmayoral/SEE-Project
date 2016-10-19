@@ -1,0 +1,4 @@
+debug.runAfterDownload=false
+eclipse.preferences.version=1
+nxjHome=/opt/lejos/leJOS_NXJ_0.9.1beta-3/
+useSeparateJVM=true
