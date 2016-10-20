@@ -2,6 +2,8 @@
 
 \usepackage{graphicx}
 \usepackage{subcaption} 
+\usepackage{float}
+\usepackage{color,soul}
 
 \title{Scientific Experimentation and Evaluation\\
 		\small{Assignment 3}}
@@ -286,25 +288,61 @@ This step is important because origin point are not in the origin of the coordin
 \subsection*{Experiments Results}
 
 The complete experiments results are at the attached file called $second\_see \_data\_.ods$.\\
+\subsubsection*{\hl{Final Robot poses}}
 
 All measurements plot are shown at figure \ref{fig:10}. Remembering that parameters from the curves are symmetric we can see that the straight line is slightly deviated from the perpendicular axis.\\
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.70]{images/results}
-\caption{Experiment Results}
+\includegraphics[scale=0.70]{images/robot_pose}
+\caption{Robot stop position}
 \label{fig:10}
 \end{figure}
 
-However, we are interested in the center of the robot, then the figure \ref{fig:11} shows the robot coordinates.
+The histograms are provided in the folder called $hist$.
 
-\begin{figure}[h!]
+
+\subsubsection*{\hl{Fitting Normal distribution to data}}
+
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.70]{images/center}
-\caption{Center Coordinates}
+\caption{Straight Line motion}
 \label{fig:11}
+\includegraphics[width=0.49\textwidth ]{images/straight_x_data}
+\includegraphics[width=0.49\textwidth]{images/straight_y_data}
 \end{figure}
 
-The histograms are provided in the folder called $hist$.
+\begin{figure}[H]
+\centering
+\caption{Slight Right motion}
+\label{fig:12}
+\includegraphics[width=0.49\textwidth ]{images/slight_right_x_data}
+\includegraphics[width=0.49\textwidth]{images/slight_right_y_data}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Slight Left motion}
+\label{fig:13}
+\includegraphics[width=0.49\textwidth ]{images/slight_left_x_data}
+\includegraphics[width=0.49\textwidth]{images/slight_left_y_data}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Steep Right motion}
+\label{fig:14}
+\includegraphics[width=0.49\textwidth ]{images/steep_right_x_data}
+\includegraphics[width=0.49\textwidth]{images/steep_right_y_data}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Steep Left motion}
+\label{fig:15}
+\includegraphics[width=0.49\textwidth ]{images/steep_left_x_data}
+\includegraphics[width=0.49\textwidth]{images/steep_left_y_data}
+\end{figure}
+
 
 \end{document}
