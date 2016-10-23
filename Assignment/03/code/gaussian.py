@@ -27,11 +27,11 @@ def plot_hist(data,nbins):
     #xmin, xmax = plt.xlim()
     val_min = np.min(data)
     val_max = np.max(data)
-    x = np.linspace(val_min-0.25, val_max+0.25, 400)
+    x = np.linspace(val_min, val_max, 400)
     p = norm.pdf(x, mu, std)
     plt.plot(x, p, 'k', linewidth=2)
     #plt.plot(gaussian(np.linspace(val_min, val_max, 200),mu,std),'k',linewidth=2)
-    title = "Fit results for steep left motion along y-axis: mu = %.2f,  std = %.2f" % (mu, std)
+    title = "Fit results for steep left motion angular: mu = %.2f,  std = %.2f" % (mu, std)
     plt.title(title)
     plt.xlabel("Data")
     plt.ylabel("Density")
@@ -40,6 +40,7 @@ def plot_hist(data,nbins):
 
 def do_pca(data):
     pcaObject = PCA(data)
+    #centered_data = pcaObject.center(data)
     projected_data = pcaObject.project(data)
     #print projected_data
     plot_hist(projected_data[:,1],8)
@@ -66,9 +67,10 @@ for x in range(0,40):
 
 robot_center_x = np.asarray(data_back_x) + (( np.asarray(data_front_x) -  np.asarray(data_back_x))/2)
 robot_center_y = np.asarray(data_back_y) + (( np.asarray(data_front_y) -  np.asarray(data_back_y))/2)
-robot_pose_theta = np.degrees(np.arctan2(robot_center_x,robot_center_y))
+robot_pose_angular = np.round(np.degrees(np.arctan2(robot_center_x,robot_center_y)),2)
+robot_pose_linear = np.round(np.sqrt(robot_center_x*robot_center_x + robot_center_y*robot_center_y),2)
 
-data = np.c_[robot_center_x,robot_center_y,robot_pose_theta]
+data = np.c_[robot_pose_linear,robot_pose_angular]
 do_pca(data)
 
 #path = "/home/chaitanya/MAS3/SEE-Project/Assignment/03/diagrams"
