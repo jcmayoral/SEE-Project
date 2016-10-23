@@ -9,12 +9,12 @@ import numpy as np
 from matplotlib import pyplot as plt
 from pyexcel_ods import get_data
 from scipy.stats import norm
+from matplotlib.mlab import PCA
 
 def gaussian(x, mu, sig):
     return np.exp(-np.power(x - mu, 2.) / (2 * np.power(sig, 2.)))
 
-straight_motion_data =  get_data("../measurements2/second_see_data_original.ods",start_row=5,
-                                 row_limit=40,start_column=21,column_limit=4)
+
                                  
 def plot_hist(data,nbins):
     #plot the gaussian
@@ -27,7 +27,7 @@ def plot_hist(data,nbins):
     #xmin, xmax = plt.xlim()
     val_min = np.min(data)
     val_max = np.max(data)
-    x = np.linspace(val_min-0.2, val_max+0.2, 400)
+    x = np.linspace(val_min-0.25, val_max+0.25, 400)
     p = norm.pdf(x, mu, std)
     plt.plot(x, p, 'k', linewidth=2)
     #plt.plot(gaussian(np.linspace(val_min, val_max, 200),mu,std),'k',linewidth=2)
@@ -38,8 +38,21 @@ def plot_hist(data,nbins):
     #plt.show()
     #plt.savefig(path)
 
+def do_pca(data):
+    pcaObject = PCA(data)
+    projected_data = pcaObject.project(data)
+    #print projected_data
+    plot_hist(projected_data[:,1],8)
+    plt.show()
+    
+
 #convert from ordered dict to lists
+straight_motion_data =  get_data("../measurements2/second_see_data_original.ods",start_row=5,
+                                 row_limit=40,start_column=21,column_limit=4)
+                                 
 data = straight_motion_data.get("Sheet1")
+#dataMatrix = np.array(data)
+
 data_front_x = list()
 data_front_y = list()
 data_back_x = list()
@@ -55,9 +68,12 @@ robot_center_x = np.asarray(data_back_x) + (( np.asarray(data_front_x) -  np.asa
 robot_center_y = np.asarray(data_back_y) + (( np.asarray(data_front_y) -  np.asarray(data_back_y))/2)
 robot_pose_theta = np.degrees(np.arctan2(robot_center_x,robot_center_y))
 
-path = "/home/chaitanya/MAS3/SEE-Project/Assignment/03/diagrams"
-plot_hist(robot_center_y,4)
-plt.show()
+data = np.c_[robot_center_x,robot_center_y,robot_pose_theta]
+do_pca(data)
+
+#path = "/home/chaitanya/MAS3/SEE-Project/Assignment/03/diagrams"
+#plot_hist(robot_center_y,4)
+#plt.show()
 #plt.savefig(path)
 
 

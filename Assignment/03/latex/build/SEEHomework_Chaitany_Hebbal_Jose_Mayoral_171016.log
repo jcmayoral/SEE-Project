@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.3)  20 OCT 2016 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.3)  23 OCT 2016 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,104 +414,112 @@ Overfull \hbox (31.26678pt too wide) in paragraph at lines 297--298
  [][] 
  []
 
-[10] <images/straight_x_data.png, id=67, 578.16pt x 433.62pt>
-File: images/straight_x_data.png Graphic file (type png)
+[10] <images/pca_straight_x_data.png, id=67, 578.16pt x 433.62pt>
+File: images/pca_straight_x_data.png Graphic file (type png)
 
-<use images/straight_x_data.png>
-Package pdftex.def Info: images/straight_x_data.png used on input line 311.
+<use images/pca_straight_x_data.png>
+Package pdftex.def Info: images/pca_straight_x_data.png used on input line 313.
+
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/straight_y_data.png, id=68, 578.16pt x 433.62pt>
-File: images/straight_y_data.png Graphic file (type png)
+<images/pca_straight_y_data.png, id=68, 578.16pt x 433.62pt>
+File: images/pca_straight_y_data.png Graphic file (type png)
 
-<use images/straight_y_data.png>
-Package pdftex.def Info: images/straight_y_data.png used on input line 312.
+<use images/pca_straight_y_data.png>
+Package pdftex.def Info: images/pca_straight_y_data.png used on input line 314.
+
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
  [11 <./images/robot_pose.png>]
-<images/slight_right_x_data.png, id=73, 578.16pt x 433.62pt>
-File: images/slight_right_x_data.png Graphic file (type png)
+<images/pca_slight_right_x_data.png, id=73, 578.16pt x 433.62pt>
+File: images/pca_slight_right_x_data.png Graphic file (type png)
 
-<use images/slight_right_x_data.png>
-Package pdftex.def Info: images/slight_right_x_data.png used on input line 319.
-
+<use images/pca_slight_right_x_data.png>
+Package pdftex.def Info: images/pca_slight_right_x_data.png used on input line 
+321.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/slight_right_y_data.png, id=74, 578.16pt x 433.62pt>
-File: images/slight_right_y_data.png Graphic file (type png)
+<images/pca_slight_right_y_data.png, id=74, 578.16pt x 433.62pt>
+File: images/pca_slight_right_y_data.png Graphic file (type png)
 
-<use images/slight_right_y_data.png>
-Package pdftex.def Info: images/slight_right_y_data.png used on input line 320.
-
+<use images/pca_slight_right_y_data.png>
+Package pdftex.def Info: images/pca_slight_right_y_data.png used on input line 
+322.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/slight_left_x_data.png, id=75, 578.16pt x 433.62pt>
-File: images/slight_left_x_data.png Graphic file (type png)
+<images/pca_slight_left_x_data.png, id=75, 578.16pt x 433.62pt>
+File: images/pca_slight_left_x_data.png Graphic file (type png)
 
-<use images/slight_left_x_data.png>
-Package pdftex.def Info: images/slight_left_x_data.png used on input line 327.
+<use images/pca_slight_left_x_data.png>
+Package pdftex.def Info: images/pca_slight_left_x_data.png used on input line 3
+29.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/slight_left_y_data.png, id=76, 578.16pt x 433.62pt>
-File: images/slight_left_y_data.png Graphic file (type png)
+<images/pca_slight_left_y_data.png, id=76, 578.16pt x 433.62pt>
+File: images/pca_slight_left_y_data.png Graphic file (type png)
 
-<use images/slight_left_y_data.png>
-Package pdftex.def Info: images/slight_left_y_data.png used on input line 328.
-(pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
- [12 <./images/straight_x_data.png> <./images/straight_y_data.png> <./images/sl
-ight_right_x_data.png> <./images/slight_right_y_data.png>] <images/steep_right_
-x_data.png, id=84, 578.16pt x 433.62pt>
-File: images/steep_right_x_data.png Graphic file (type png)
-
-<use images/steep_right_x_data.png>
-Package pdftex.def Info: images/steep_right_x_data.png used on input line 335.
+<use images/pca_slight_left_y_data.png>
+Package pdftex.def Info: images/pca_slight_left_y_data.png used on input line 3
+30.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/steep_right_y_data.png, id=85, 578.16pt x 433.62pt>
-File: images/steep_right_y_data.png Graphic file (type png)
+<images/pca_steep_right_x_data.png, id=77, 578.16pt x 433.62pt>
+File: images/pca_steep_right_x_data.png Graphic file (type png)
 
-<use images/steep_right_y_data.png>
-Package pdftex.def Info: images/steep_right_y_data.png used on input line 336.
+<use images/pca_steep_right_x_data.png>
+Package pdftex.def Info: images/pca_steep_right_x_data.png used on input line 3
+37.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/steep_left_x_data.png, id=86, 578.16pt x 433.62pt>
-File: images/steep_left_x_data.png Graphic file (type png)
+<images/pca_steep_right_y_data.png, id=78, 578.16pt x 433.62pt>
+File: images/pca_steep_right_y_data.png Graphic file (type png)
 
-<use images/steep_left_x_data.png>
-Package pdftex.def Info: images/steep_left_x_data.png used on input line 343.
+<use images/pca_steep_right_y_data.png>
+Package pdftex.def Info: images/pca_steep_right_y_data.png used on input line 3
+38.
+(pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
+ [12 <./images/pca_straight_x_data.png> <./images/pca_straight_y_data.png> <./i
+mages/pca_slight_right_x_data.png> <./images/pca_slight_right_y_data.png> <./im
+ages/pca_slight_left_x_data.png> <./images/pca_slight_left_y_data.png>]
+<images/pca_steep_left_x_data.png, id=88, 578.16pt x 433.62pt>
+File: images/pca_steep_left_x_data.png Graphic file (type png)
+
+<use images/pca_steep_left_x_data.png>
+Package pdftex.def Info: images/pca_steep_left_x_data.png used on input line 34
+5.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
 
-<images/steep_left_y_data.png, id=87, 578.16pt x 433.62pt>
-File: images/steep_left_y_data.png Graphic file (type png)
+<images/pca_steep_left_y_data.png, id=89, 578.16pt x 433.62pt>
+File: images/pca_steep_left_y_data.png Graphic file (type png)
 
-<use images/steep_left_y_data.png>
-Package pdftex.def Info: images/steep_left_y_data.png used on input line 344.
+<use images/pca_steep_left_y_data.png>
+Package pdftex.def Info: images/pca_steep_left_y_data.png used on input line 34
+6.
 (pdftex.def)             Requested size: 182.98885pt x 137.23944pt.
- [13 <./images/slight_left_x_data.png> <./images/slight_left_y_data.png> <./ima
-ges/steep_right_x_data.png> <./images/steep_right_y_data.png> <./images/steep_l
-eft_x_data.png> <./images/steep_left_y_data.png>] (build/SEEHomework_Chaitany_H
-ebbal_Jose_Mayoral_171016.aux) ) 
+ [13 <./images/pca_steep_right_x_data.png> <./images/pca_steep_right_y_data.png
+> <./images/pca_steep_left_x_data.png> <./images/pca_steep_left_y_data.png>]
+(build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_171016.aux) ) 
 Here is how much of TeX's memory you used:
  4480 strings out of 494910
- 75168 string characters out of 6179837
+ 75368 string characters out of 6179837
  195754 words of memory out of 5000000
  7720 multiletter control sequences out of 15000+600000
  7594 words of font info for 27 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,9n,52p,423b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb>
+</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_171016.pdf (13
- pages, 12198079 bytes).
+ pages, 12162641 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream

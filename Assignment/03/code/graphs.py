@@ -44,6 +44,9 @@ plt.legend((dt,ct),
            loc='lower left',
            ncol=2,
            fontsize=8)
+plt.xlim(-30,30)
+plt.ylim(-10,80)
+
 
 
 """
