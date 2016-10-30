@@ -20,11 +20,21 @@ plt.grid('on')
 plt.title('Experiment Results')
 plt.xlabel('Y World Axis (in cm)')
 plt.ylabel('X World Axis (in cm)')
+plt.axes().set_aspect('equal')
 dt = plt.scatter(y,x,color='b')
 print "done all"
 
 x,y,theta = [],[],[]
 
+with open('initPose','r') as f:
+    for l in f:
+        a = l.split('\t')
+        x.append(a[0])
+        y.append(a[1].r strip())
+
+dt = plt.scatter(y,x,color='y')
+
+x,y,theta = [],[],[]
 with open('center','r') as f:
     for l in f:
         a = l.split('\t')
@@ -35,13 +45,12 @@ with open('center','r') as f:
 #plt.title('ALL Coordinates')
 #plt.xlabel('Y World Axis')
 #plt.ylabel('X World Axis')
-
 ct = plt.scatter(y,x,color='r')
 plt.autoscale()
 plt.legend((dt,ct),
-           ('Final pose', 'Center pose'),
+           ('Sensors Poses', 'Center pose'),
            scatterpoints=1,
-           loc='lower left',
+           #loc='lower right',
            ncol=2,
            fontsize=8)
 plt.xlim(-30,30)
