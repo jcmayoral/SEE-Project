@@ -64,36 +64,25 @@ figs = []
 for i,n in enumerate(name):
     x,y,theta,samples = extract(n)
     x = np.asarray(x,dtype=np.double)
-    x = x-x[0]
+    x = np.reshape(x,(samples,40))
+    y = np.reshape(y,(samples,40))
     y = np.asarray(y,dtype=np.double)
-    y = y - y[0]
     theta = np.asarray(y,dtype=np.double)
-    #figs.append(plt.scatter(y,x,color=colors[i],s=1))    
-    plt.plot(y,x,color=colors[i])
-    plt.hold
+    figs.append(plt.scatter(y,x,color=colors[i],s=4))
     
-    """    
-    x = np.resize(x,(samples,40))
-    y = np.resize(y,(samples,40))
-    
-    x_,y_ = [],[]
-
-    for j in range(samples):
-        data = np.c_[x[j,:],y[j,:]]
-        #x1 = np.mean(x[j,:])
-        #y1 = np.mean(y[j,:])
+    print n,
+    for i in range(samples):
+        data = np.c_[x[i,:,],y[i,:]]
         pcaObject = PCA(data)
         projected_data = pcaObject.project(data)
-        x1 = np.mean(x[j,:])
-        y1 = np.mean(y[j,:])
-        #x_.append(projected_data[0])
-        #y_.append(projected_data[1])
-        #plt.scatter(y1,x1,color=colors[i])
-        plt.plot(projected_data[1],projected_data[0],color=colors[i])
-        #plt.plot(pcaObject.mu[1],pcaObject.mu[0],color=colors[i])
-    """
+        print i, " of " , samples
+        print "mean", pcaObject.mu, " standard deviation" ,pcaObject.sigma
+    #print n, projected_data[:][1]
+    #figs.append(plt.scatter(projected_data[:][0],projected_data[:][1],color=colors[i]))
+
+
 ax = plt.gca()
-plt.xlim(3000,-3000)
+plt.xlim(1000,-1000)
 plt.ylim(200,-3000)
 #plt.xlim(100,-1000)
 #plt.ylim(500,-500)
