@@ -111,7 +111,6 @@ The measuring method for each curve consists on:
 	\item Tracker can loses the robot for instances then the data is not noise-free.
 \end{itemize}
 
-
 \subsection*{Data Processing}
 
 The raw measurements are shown at figure \ref{fig:realScaleraw}. This figure doesn't show any kind of data processing so it makes able to see some noisy measurements that don't relies to any of the five curves. Also the figure shows an unexpected problem with a measurement method which is that the curve were acquired in two different days then the initial marker were lost for the second day. In the figure, straight and slightleft curve were taken in the first day, the rest on the second one.
@@ -152,12 +151,54 @@ Additionally the sizes of the measurements files were trim to the minimum length
 \label{fig:preprocess}
 \end{figure}
 
+\hl{Since the cameras in the lab are not caliberated properly there were some errors in our last weeks measurements.so we conducted the experiments again to get a new set of measurements.All the measurements were taken within radius of one camera so that errors due to camera caliberation do not affect our measurements. }
+The new set of measurements are as shown in Figure:\ref{fig:OriginalData}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.6]{images/figure_1}
+\caption{New set of measurements}
+\label{fig:OriginalData}
+\end{figure}
+
 \newpage
-\subsection*{Experiments Results}
-\section*{Experimental Observations}
+
+\subsection*{\hl{Motion Model}}
+
+We use the velocity motion model specified in the book "Probablistic robotics" by sebastian thrun.According to this model, the probability of a robot’s pose at time $t$ given a motion command and the pose at time $t − 1$ is given as in \cite{Alex}
+
+\[
+	P(x_t|x_{t-1},u_t) = N(0,\alpha_1 v^2+\alpha_2 \omega^2) \cdot
+						 N(0,\alpha_3 v^2+\alpha_4 \omega^2) \cdot
+						 N(0,\alpha_5 v^2+\alpha_6 \omega^2)
+\]
+
+where v and $\omega$ are commanded linear and angular velocities and the three normal distributions are evaluated at points 
+$v - \hat{v} , \omega - \hat{\omega} $ and $\gamma$
+
+
+We estimate the motion parameters $\alpha_1 ... \alpha_6$ using the maximum likelihood approach.
+
+We made use of the code provided in the sample solution \cite{Alex} to estimate the  motion parameters $\alpha_1 ... \alpha_6$
+
+The values obtained are as follows: 
+
+$\alpha_1$ =  3.17679348e-06 
+
+$\alpha_2$ =  2.61282443e-06
+
+$\alpha_3$ =  7.33286509e-06
+
+$\alpha_4$ =  4.43967131e-06
+
+$\alpha_5$ =  6.38137103e-06
+
+$\alpha_6$ =  9.99649623e-06
+        
+      
 \subsection*{Parameters used to drive the robot}
 
-\begin{table}[ht!]
+\begin{table}[ht]
 \centering
 \caption{Parameters Used}
 \label{tab:1}
@@ -172,17 +213,13 @@ Straight        & 160        & 90    &          & 12 \\ \hline
 \end{tabular}
 \end{table}
 
-\subsection*{Experiments Results}
-
-
-\subsection*{Precision and Accuracy}
-
 
 \section*{Conclusions}
 
 
 \begin{thebibliography}{1}
 \bibitem{OptSystem} Optical Tracking Explanation \href{http://www.ps-tech.com/3d-technology/optical-tracking}{Link}
+\bibitem{Alex} Motion Model Parameter Estimation:Sample Solution
 \end{thebibliography}
 
 \end{document}
