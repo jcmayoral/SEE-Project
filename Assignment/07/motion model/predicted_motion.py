@@ -26,10 +26,10 @@ def sample_motion_model_velocity(ut,x_prevt,alphas,delta_t):
     var3 = alphas[4]*(ut[0]*ut[0]) + alphas[5]*(ut[1]*ut[1])
     v_hat = ut[0] + np.random.normal(0,var1)
     omega_hat = ut[1] + np.random.normal(0,var2)
-    gamma_hat = np.random.normal(0,var3)
-    
-    xt = x_prevt[0] - (v_hat/omega_hat)*np.sin(x_prevt[2]) + (v_hat/omega_hat)*np.sin(x_prevt[2] + (omega_hat*delta_t))
-    yt = x_prevt[1] + (v_hat/omega_hat)*np.cos(x_prevt[2]) - (v_hat/omega_hat)*np.cos(x_prevt[2] + (omega_hat*delta_t))
+    gamma_hat = 0#np.random.normal(0,var3)
+    K = (v_hat/omega_hat)
+    xt = x_prevt[0] - K * np.sin(x_prevt[2]) + K * np.sin(x_prevt[2] + (omega_hat*delta_t))
+    yt = x_prevt[1] + K * np.cos(x_prevt[2]) - K * np.cos(x_prevt[2] + (omega_hat*delta_t))
     theta = x_prevt[2] + (omega_hat*delta_t) +(gamma_hat*delta_t)
     
     return np.array([xt,yt,theta])     
@@ -52,8 +52,8 @@ def get_sampled_data():
             temp = list()
             temp.append(pose)
             for k in xrange(len(trajectory)-1):
-                    delta_t = data.time_deltas[i][j][k]
-                    mmv = sample_motion_model_velocity((v[i], omega[i]), temp[k],alphas,delta_t)
+                    delta_t = 10#data.time_deltas[i][j][k]
+                    mmv = sample_motion_model_velocity((v[i], omega[i]), trajectory[k],alphas,delta_t)
                     temp.append(mmv)
             motion_model_data.append(temp)
         newdata.append(motion_model_data)
@@ -63,10 +63,18 @@ def get_sampled_data():
     return newdata      
 
 if __name__ == "__main__":
-    motion_model_data = get_sampled_data()
     directory_names = ['straight', 'slightleft', 'slightright', 'steepleft', 'steepright']
     colors=['r','b','y','c','g']
+
+    plt.grid('on')
+    plt.axis('equal')
+    plt.xlabel('Y World Axis (in mm)')
+    plt.ylabel('X World Axis (in mm)')
     
+    motion_model_data = get_sampled_data()
+    data = calculate_alphas.read_data(directory_names)
+
+
     for i,trajectories in enumerate(motion_model_data):
         x = []
         y = []
