@@ -46,35 +46,40 @@ def fitgaussian(data):
 
 
                                  
-def plot_hist(data,nbins):
+def plot_hist(data,index,nbins,motion):
     #plot the gaussian
-    mu, std = norm.fit(data)
+    mu, std = norm.fit(data[:,index])
    
     # Plot the histogram.
-    plt.hist(data, bins=nbins, normed=True, alpha=0.8, color='g')
+    fig = plt.figure()
+    plt.hist(data[:,index], bins=nbins, normed=True, alpha=0.8, color='g')
     
     # Plot the PDF.
     #xmin, xmax = plt.xlim()
-    val_min = np.min(data)
-    val_max = np.max(data)
-    x = np.linspace(val_min, val_max, 400)
+    val_min = np.min(data[:,index])
+    val_max = np.max(data[:,index])
+    x = np.linspace(val_min, val_max, 800)
     p = norm.pdf(x, mu, std)
+    
+    
     plt.plot(x, p, 'k', linewidth=2)
     #plt.plot(gaussian(np.linspace(val_min, val_max, 200),mu,std),'k',linewidth=2)
-    title = "Fit results for steep left motion angular: mu = %.2f,  std = %.2f" % (mu, std)
+    title = "Fit results for "+motion+" : mu = %.2f,  std = %.2f" % (mu, std)
     plt.title(title)
     plt.xlabel("Data")
     plt.ylabel("Density")
-    #plt.show()
+    plt.show()
     #plt.savefig(path)
+    return fig
 
-def do_pca(data,index):
+def do_pca(data):
     pcaObject = PCA(data)
     #centered_data = pcaObject.center(data)
     projected_data = pcaObject.project(data)
     #print projected_data
-    plot_hist(projected_data[:,index],8)
-    plt.show()
+    #plot_hist(projected_data[:,index],4)
+    #plt.show()
+    return projected_data
     
 if __name__ == "__main__":
     #convert from ordered dict to lists
