@@ -7,7 +7,7 @@ Created on Wed Oct 19 19:53:15 2016
 
 import numpy as np
 from matplotlib import pyplot as plt
-from pyexcel_ods import get_data
+#from pyexcel_ods import get_data
 from scipy.stats import norm
 from matplotlib.mlab import PCA
 from scipy import optimize

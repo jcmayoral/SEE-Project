@@ -48,9 +48,9 @@ def read_data(directory_names):
             trajectories.append(poses)
             trajectories_end.append(poses[-1])
             times.append(time_deltas)
-            data_store.trajectories.append(trajectories)
-            data_store.trajectories_end.append(trajectories_end)
-            data_store.time_deltas.append(times)
+        data_store.trajectories.append(trajectories)
+        data_store.trajectories_end.append(trajectories_end)
+        data_store.time_deltas.append(times)
         os.chdir('..')
     return data_store
 
@@ -67,17 +67,16 @@ def motion_model_velocity(xt, ut, x_prevt, delta_t):
     gamma_hat = (xt[2] - x_prevt[2]) / delta_t - omega_hat
     return np.array([ut[0], ut[1], v_hat, omega_hat, gamma_hat])
 
-if __name__ == "__main__":
-    directory_names = ['straight', 'slightleft', 'slightright', 'steepleft', 'steepright']
+def estimate_alphas(data):
+    #directory_names = ['straight', 'slightleft', 'slightright', 'steepleft', 'steepright']
     v = [-10., -10., -10., -10., -10.]
     omega = [0., np.radians(10/120), np.radians(-10/120), np.radians(10/40), np.radians(-10/40)]
-    data = read_data(directory_names)
+    #data = read_data(directory_names)
     
     motion_model_data = list()
     for i, trajectories in enumerate(data.trajectories):
         for j, trajectory in enumerate(trajectories):
             for k in xrange(len(trajectory)-1):
-                if(i<5):
                     delta_t = data.time_deltas[i][j][k]
                     mmv = motion_model_velocity(trajectory[k+1], (v[i], omega[i]), trajectory[k], delta_t)
                     motion_model_data.append(mmv)
@@ -87,7 +86,7 @@ if __name__ == "__main__":
     init_alphas = np.random.uniform(1e-7, 1e-5, 6)
     alphas = optimise_parameters(motion_model_data, init_alphas)
     
-    print alphas   
+    return alphas   
 #name = ['straight','slightleft','slightright','steepleft','steepright']
 #colors=['r','b','y','c','g']
 #extension = '.log'

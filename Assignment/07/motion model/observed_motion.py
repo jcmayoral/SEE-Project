@@ -23,7 +23,7 @@ def processdata(end_pose):
         if((i+1) % 40 == 0):
             temp.append(motion)
             trajectories.append(temp)
-            temp = []
+            temp = list()
         else:
             temp.append(motion)
     return trajectories
