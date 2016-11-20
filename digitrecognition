@@ -1,0 +1,74 @@
+Handwritten Digit Recognition Summary
+From Jitendra Malik
+
+-> MNIST database of handwritten digits
+
+60 K examples (6K by digit) 
+test set 10K
+* Recommend for start learning techniques and pattern recognition.
+
+-> Handwritten Digit Recognition approach based on machine learning
+
+Training
+1) Compute feature vectors positive and negative examples of image pathces.
+2) Train a classifier.
+
+There are several ways to compute feature vectors 
+
+Test
+1) Compute feature vector on image patch.
+2) Evaluate classifier.
+
+
+On training there might be some false classified then they might be consider as well.
+
+Linear Classifier-> the decision boundary is calculated as a line w.x + b = 0 (line) w and b might be calculated.
+
+->Approaches to train classifiers:
+Nearest neighbor methods.
+Neural Networks.
+Support Vector Machines.
+Randomized Decision Trees.
+
+->SVM (Support Vector Machines)
+Linear Classifier true or false
+Soft margin SVM allows errors but just with penalizations
+Training is a convex optimizations... guarantees that the global best solution is found.
+
+Linear boundaries can be calculated form higher dimensional features 
+	Ex from x1^2+x2^2 = c -> [x1 x2 x1^2 x2^2 x1x2]
+
+-> Kernel SVM 
+Decision function sign(h(x)) after the result of kernel 
+
+Linear SVM 
+h(x) = Sum_i wixi + b
+Non Linear (Krnelized SVM)
+h(x) = Sum_j alphaj K(x,xj) + b
+
+
+-> Orientations Histograms
+Used for generalization of transformation-scaling, translation, rotations, small deformations.
+
+How to build the transformational invariance?
+Include transformed copies in the database.
+Build in invariance into the feature vector. Orientation histograms do this for several common transformations.
+Can be computed on blocks of pixels then tolerance to small shifts can be obtained.
+
+Support vectors are the vectors closer to the bounder
+
+Histogram Classifier
+K(a,b) = Sum min(ai,bi) -> goes to Kernelized SVM function
+
+->What feature vectors needed for digit recognition via SVM?
+Pixel brightness and orientation histogram
+-> Explanation -> Page 35 and 43
+
+
+Random Decision Trees
+
+
+
+
+
+
