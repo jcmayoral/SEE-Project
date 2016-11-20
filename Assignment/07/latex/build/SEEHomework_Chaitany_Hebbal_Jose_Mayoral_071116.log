@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.20)  7 NOV 2016 10:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.11.18)  20 NOV 2016 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.tex
 (./SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 4 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2013/12/19 v3.12 KOMA-Script document class (article)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -452,12 +452,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 7741 strings out of 494985
- 123376 string characters out of 6180356
- 250243 words of memory out of 5000000
- 10850 multiletter control sequences out of 15000+600000
+ 7741 strings out of 493304
+ 123376 string characters out of 6139870
+ 254379 words of memory out of 5000000
+ 11092 multiletter control sequences out of 15000+600000
  7295 words of font info for 26 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 957 hyphenation exceptions out of 8191
  54i,10n,52p,569b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
@@ -471,7 +471,7 @@ fonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti10.pfb>
 Output written on build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.pdf (6 
-pages, 6305304 bytes).
+pages, 6305177 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
