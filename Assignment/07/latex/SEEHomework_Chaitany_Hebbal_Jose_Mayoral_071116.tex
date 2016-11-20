@@ -6,6 +6,7 @@
 \usepackage{nameref}
 \usepackage{hyperref}
 \usepackage{color,soul}
+\usepackage{listings}
 
 \title{Scientific Experimentation and Evaluation\\
 		\small{Assignment 7}}
@@ -14,7 +15,7 @@
 
 \begin{document}
 	\maketitle
-\section*{Task Description}
+\section{Task Description}
 
 Using a modified LEGO robot from the experiment \textit{"Manual motion observation"} a new set of poses will be acquired via AICISS lab optical localization system, then the data will be analyzed to observe the variation on the poses and look at the error distributions in order to observe the variation on the measures and look at the error distributions.
 
@@ -24,7 +25,7 @@ The layout of this experiment consists on:
 	\item The Device Under Test is a modified LEGO robot from the experiment \textit{"Manual motion observation"}.
 \end{enumerate}
 
-\section*{AICISS Lab Optical Localization System}
+\section{AICISS Lab Optical Localization System}
 
 A optical-based localization system will be used in this experiment. From \cite{OptSystem} the optical systems have several advantage to take into account:
 
@@ -68,9 +69,9 @@ Speaking about software, it has some components that need to be run in the works
 %\label{fig:visualizator}
 %\end{figure}
 
-\section*{Experiment setup}
+\section{Experiment setup}
 
-\subsection*{Device Under Test}
+\subsection{Device Under Test}
 
 A tracker have been added to the top of the robot in order to make able the system to track it, the robot configuration is shown at figure \ref{fig:1}.
 
@@ -81,7 +82,7 @@ A tracker have been added to the top of the robot in order to make able the syst
 \label{fig:1}
 \end{figure}
 
-\subsection*{Measuring Method}
+\subsection{Measuring Method}
 
 The measuring method for each curve consists on:
 \begin{enumerate}
@@ -103,7 +104,7 @@ The measuring method for each curve consists on:
 \end{figure}
 
 
-\subsection*{What difficulties are expected?}
+\subsection{What difficulties are expected?}
 
 \begin{itemize}
 	\item Other tracker in the arena must be hidden.
@@ -111,8 +112,7 @@ The measuring method for each curve consists on:
 	\item Tracker can loses the robot for instances then the data is not noise-free.
 \end{itemize}
 
-
-\subsection*{Data Processing}
+\subsection{Data Processing}
 
 The raw measurements are shown at figure \ref{fig:realScaleraw}. This figure doesn't show any kind of data processing so it makes able to see some noisy measurements that don't relies to any of the five curves. Also the figure shows an unexpected problem with a measurement method which is that the curve were acquired in two different days then the initial marker were lost for the second day. In the figure, straight and slightleft curve were taken in the first day, the rest on the second one.
 
@@ -125,7 +125,7 @@ The raw measurements are shown at figure \ref{fig:realScaleraw}. This figure doe
 
 %However the figure \ref{fig:rawMeasurements} doesn't show the real size of the environment. The correct scale is shown at \ref{fig:realScale}.
 
-\begin{figure}[ht!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.50]{images/realScaleraw}
 \caption{Raw Acquired Data}
@@ -145,19 +145,108 @@ Then this calculated initial pose was substracted to all the poses from the file
 \]
 Additionally the sizes of the measurements files were trim to the minimum length of all of the measurements. The result project all measurements to the origin of a frame \ref{fig:preprocess}.
 
-\begin{figure}[ht!]
+\begin{figure}[H]
 \centering
 \includegraphics[trim={220 0 0 0},clip,scale=0.5]{images/centerMeasurements}
 \caption{CenterData}
 \label{fig:preprocess}
 \end{figure}
 
-\newpage
-\subsection*{Experiments Results}
-\section*{Experimental Observations}
-\subsection*{Parameters used to drive the robot}
+\hl{Since the cameras in the lab are not caliberated properly there were some errors in our last weeks measurements.so we conducted the experiments again to get a new set of measurements.All the measurements were taken within radius of one camera so that errors due to camera calibration do not affect our measurements. }
+The new set of measurements are as shown in Figure:\ref{fig:OriginalData}
 
-\begin{table}[ht!]
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.25]{images/figure_1}
+\caption{New set of measurements}
+\label{fig:OriginalData}
+\end{figure}
+
+\newpage
+
+\hl{\t}
+
+\subsection{Motion Model}
+
+A motion model can be fitted to the measured data. This model is based on \cite{MotionModel} where additional information can be found.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.2]{images/velocity-motion-model}
+\caption{Velocity motion model \cite{MotionModel}}
+\label{fig:motionmodel}
+\end{figure}
+
+We use the velocity motion model as shown in Figure:\ref{fig:motionmodel} According to this model, the probability of a robot’s pose at time $t$ given a motion command and the pose at time $t − 1$ is given as in \cite{Alex}
+
+\[
+	P(x_t|x_{t-1},u_t) = N(0,\alpha_1 v^2+\alpha_2 \omega^2) \cdot
+						 N(0,\alpha_3 v^2+\alpha_4 \omega^2) \cdot
+						 N(0,\alpha_5 v^2+\alpha_6 \omega^2)
+\]
+
+where v and $\omega$ are commanded linear and angular velocities and the three normal distributions are evaluated at points 
+$v - \hat{v} , \omega - \hat{\omega} $ and $\gamma$
+
+
+We estimate the motion parameters $\alpha_1 ... \alpha_6$ using the maximum likelihood approach.
+
+We made use of the code provided in the sample solution \cite{Alex} to estimate the  motion parameters $\alpha_1 ... \alpha_6$
+
+The values obtained are as follows: 
+
+$\alpha_1$ =  9.36575693e-06 
+
+$\alpha_2$ =  8.53840417e-06
+
+$\alpha_3$ =  9.22593223e-06
+
+$\alpha_4$ =  6.02069757e-06
+
+$\alpha_5$ =  2.54877909e-06
+
+$\alpha_6$ =  8.97275720e-06
+     
+
+Once we have estimated the values of alphas, we sample data using following algorithm as shown in Figure:\ref{fig:samplingmodel}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.2]{images/sampling-model}
+\caption{Sample motion model velocity \cite{MotionModel}}
+\label{fig:samplingmodel}
+\end{figure}
+
+\subsection{Results}
+
+From figures\ref{fig:OriginalData} and \ref{fig:SampledData} it is clear that the motion model fits the observed data for the estimated values of alpha. However, the steep left curves still be shorter than the right curves. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.2]{images/figure_1}
+\caption{Original Data}
+\label{fig:OriginalData}
+
+\centering
+\includegraphics[scale=0.2]{images/figure_2}
+\caption{Sampled Data from Motion Model}
+\label{fig:SampledData}
+\end{figure}        
+
+
+
+\begin{thebibliography}{1}
+\bibitem{OptSystem} Optical Tracking Explanation: \href{http://www.ps-tech.com/3d-technology/optical-tracking}{Link}
+\bibitem{Alex} Motion Model Parameter Estimation:Sample Solution
+\bibitem{MotionModel} Probablistic Motion Models by Wolfram Burgard, Cyrill Stachniss,Maren Bennewitz, Kai Arras:   \href{http://ais.informatik.uni-freiburg.de/teaching/ss11/robotics/slides/06-motion-models.pdf} {Link}
+\end{thebibliography}
+
+
+\section{Appendix}
+
+\subsection{Parameters used to drive the robot}
+
+\begin{table}[h!]
 \centering
 \caption{Parameters Used}
 \label{tab:1}
@@ -172,17 +261,29 @@ Straight        & 160        & 90    &          & 12 \\ \hline
 \end{tabular}
 \end{table}
 
-\subsection*{Experiments Results}
+\newpage
+\subsection{Sampling code}
+
+\begin{lstlisting}
+ 
+def sample_motion_model_velocity(ut,x_prevt,alphas,delta_t):
+    var1 = alphas[0]*(ut[0]*ut[0]) + alphas[1]*(ut[1]*ut[1])
+    var2 = alphas[2]*(ut[0]*ut[0]) + alphas[3]*(ut[1]*ut[1])
+    var3 = alphas[4]*(ut[0]*ut[0]) + alphas[5]*(ut[1]*ut[1])
+    v_hat = ut[0] + np.random.normal(0,var1)
+    omega_hat = ut[1] + np.random.normal(0,var2)
+    gamma_hat = 0#np.random.normal(0,var3)
+    K = (v_hat/omega_hat)
+    xt = x_prevt[0] - K * np.sin(x_prevt[2]) + ...
+	... K * np.sin(x_prevt[2] + (omega_hat*delta_t))
+    yt = x_prevt[1] + K * np.cos(x_prevt[2]) - ...
+    ... K * np.cos(x_prevt[2] + (omega_hat*delta_t))
+    theta = x_prevt[2] + (omega_hat*delta_t) +(gamma_hat*delta_t)
+    
+    return np.array([xt,yt,theta])
+    
+\end{lstlisting}
 
 
-\subsection*{Precision and Accuracy}
-
-
-\section*{Conclusions}
-
-
-\begin{thebibliography}{1}
-\bibitem{OptSystem} Optical Tracking Explanation \href{http://www.ps-tech.com/3d-technology/optical-tracking}{Link}
-\end{thebibliography}
 
 \end{document}
