@@ -1,44 +1,43 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.3)  14 NOV 2016 09:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.11.18)  20 NOV 2016 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.tex
 (./SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
-Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
-
+Document Class: scrartcl 2013/12/19 v3.12 KOMA-Script document class (article)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
-basics and keyval usage)
+Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
+Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
+Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
 
-Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
+Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 ))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
+Package: tocbasic 2013/12/19 v3.12 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 123.
+(tocbasic)             for `toc' on input line 115.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 124.
+(tocbasic)             for `lof' on input line 116.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 125.
+(tocbasic)             for `lot' on input line 117.
 Package scrartcl Info: You've used standard option `10pt'.
 (scrartcl)             This is correct!
 (scrartcl)             Internally I'm using `fontsize=10pt'.
@@ -46,16 +45,16 @@ Package scrartcl Info: You've used standard option `10pt'.
 (scrartcl)             you'd have to use `fontsize=10pt' there
 (scrartcl)             instead of `10pt', too.
 Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
-ine 2033.
+ine 1531.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (10p
-t)
+File: scrsize10pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (10pt
+)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
+Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
 
-Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
+Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -81,7 +80,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 1509.
+(typearea)              on input line 1330.
 )
 \c@part=\count80
 \c@section=\count81
@@ -89,7 +88,6 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count83
 \c@paragraph=\count84
 \c@subparagraph=\count85
-LaTeX Info: Redefining \textsubscript on input line 3906.
 \abovecaptionskip=\skip46
 \belowcaptionskip=\skip47
 \c@pti@nb@sid@b@x=\box26
@@ -97,18 +95,18 @@ LaTeX Info: Redefining \textsubscript on input line 3906.
 \c@table=\count87
 \bibindent=\dimen102
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -125,14 +123,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen104
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen105
 \captionmargin@=\dimen106
 \captionwidth=\dimen107
@@ -294,12 +292,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 143.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
@@ -313,37 +311,65 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen117
 \SOUL@ulht=\dimen118
 )
-(build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count104
+\lst@gtempboxa=\box29
+\lst@token=\toks22
+\lst@length=\count105
+\lst@currlwidth=\dimen119
+\lst@column=\count106
+\lst@pos=\count107
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count108
+\lst@lineno=\count109
+\lst@maxwidth=\dimen122
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
+\lst@framebox=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.aux
+
+LaTeX Warning: Label `fig:OriginalData' multiply defined.
+
+)
 \openout1 = `SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen119
-\scratchbox=\box29
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen120
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count112
+\scratchdimen=\dimen123
+\scratchbox=\box31
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen124
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -362,99 +388,163 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 15.
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 16.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
 
 (build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.out)
 (build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.out)
 \@outlinefile=\write3
 \openout3 = `SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.out'.
 
+\c@lstlisting=\count118
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 17.
+(Font)              <14.4> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+(Font)              <7> on input line 18.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
  [1
 
 
+
+
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/marker.jpg, id=21, 2194.1975pt x 2192.19pt>
+<images/marker.jpg, id=67, 2194.1975pt x 2192.19pt>
 File: images/marker.jpg Graphic file (type jpg)
  <use images/marker.jpg>
-Package pdftex.def Info: images/marker.jpg used on input line 50.
+Package pdftex.def Info: images/marker.jpg used on input line 51.
 (pdftex.def)             Requested size: 2194.19217pt x 2192.18468pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 60.
+(Font)              <5> on input line 61.
 
-<images/robotWithMarker.jpg, id=23, 4175.6pt x 2344.76pt>
+<images/robotWithMarker.jpg, id=69, 4175.6pt x 2344.76pt>
 File: images/robotWithMarker.jpg Graphic file (type jpg)
 
 <use images/robotWithMarker.jpg>
-Package pdftex.def Info: images/robotWithMarker.jpg used on input line 79.
+Package pdftex.def Info: images/robotWithMarker.jpg used on input line 80.
 (pdftex.def)             Requested size: 4175.58987pt x 2344.75429pt.
  [2 <./images/marker.jpg>]
-<images/initChecker.jpg, id=37, 4175.6pt x 2344.76pt>
+<images/initChecker.jpg, id=80, 4175.6pt x 2344.76pt>
 File: images/initChecker.jpg Graphic file (type jpg)
 
 <use images/initChecker.jpg>
-Package pdftex.def Info: images/initChecker.jpg used on input line 100.
+Package pdftex.def Info: images/initChecker.jpg used on input line 101.
 (pdftex.def)             Requested size: 1967.33987pt x 1341.00429pt.
 
 
 LaTeX Warning: Reference `fig:realScaleraw' on page 3 undefined on input line 1
-16.
+17.
 
 [3 <./images/robotWithMarker.jpg>]
-<images/realScaleraw.png, id=53, 578.16pt x 433.62pt>
+<images/realScaleraw.png, id=94, 578.16pt x 433.62pt>
 File: images/realScaleraw.png Graphic file (type png)
 
 <use images/realScaleraw.png>
-Package pdftex.def Info: images/realScaleraw.png used on input line 129.
+Package pdftex.def Info: images/realScaleraw.png used on input line 130.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [4 <./images/initChecker.jpg> <./images/realScaleraw.png>] <images/centerMeasu
-rements.png, id=63, 1175.1102pt x 615.7404pt>
+rements.png, id=104, 1175.1102pt x 615.7404pt>
 File: images/centerMeasurements.png Graphic file (type png)
 
 <use images/centerMeasurements.png>
-Package pdftex.def Info: images/centerMeasurements.png used on input line 149.
+Package pdftex.def Info: images/centerMeasurements.png used on input line 150.
 (pdftex.def)             Requested size: 477.14117pt x 307.86945pt.
 
-Overfull \hbox (103.69872pt too wide) in paragraph at lines 149--150
+Overfull \hbox (103.69872pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
 [5 <./images/centerMeasurements.png>]
-<images/figure_1.png, id=77, 578.16pt x 433.62pt>
+<images/figure_1.png, id=118, 1682.4456pt x 898.3161pt>
 File: images/figure_1.png Graphic file (type png)
- <use images/figure_1.png>
-Package pdftex.def Info: images/figure_1.png used on input line 159.
-(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+
+<use images/figure_1.png>
+Package pdftex.def Info: images/figure_1.png used on input line 160.
+(pdftex.def)             Requested size: 420.61037pt x 224.57848pt.
+
+Overfull \hbox (47.16791pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
 
 [6 <./images/figure_1.png>]
+<images/velocity-motion-model.png, id=126, 1314.9125pt x 865.2325pt>
+File: images/velocity-motion-model.png Graphic file (type png)
+
+<use images/velocity-motion-model.png>
+Package pdftex.def Info: images/velocity-motion-model.png used on input line 17
+1.
+(pdftex.def)             Requested size: 262.97784pt x 173.04343pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
 
-(build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
+<images/sampling-model.png, id=133, 1136.245pt x 555.07375pt>
+File: images/sampling-model.png Graphic file (type png)
+
+<use images/sampling-model.png>
+Package pdftex.def Info: images/sampling-model.png used on input line 211.
+(pdftex.def)             Requested size: 227.24496pt x 111.01277pt.
+File: images/figure_1.png Graphic file (type png)
+ <use images/figure_1.png>
+Package pdftex.def Info: images/figure_1.png used on input line 220.
+(pdftex.def)             Requested size: 420.61037pt x 224.57848pt.
+
+Overfull \hbox (47.16791pt too wide) in paragraph at lines 220--221
+ [][] 
+ []
+
+[7 <./images/velocity-motion-model.png>]
+<images/figure_2.png, id=147, 1682.4456pt x 898.3161pt>
+File: images/figure_2.png Graphic file (type png)
+
+<use images/figure_2.png>
+Package pdftex.def Info: images/figure_2.png used on input line 227.
+(pdftex.def)             Requested size: 420.61037pt x 224.57848pt.
+
+Overfull \hbox (47.16791pt too wide) in paragraph at lines 227--228
+ [][] 
+ []
+
+[8 <./images/sampling-model.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./images/figure_2.png>]
+Overfull \hbox (172.5631pt too wide) in paragraph at lines 273--274
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (172.5631pt too wide) in paragraph at lines 274--275
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (16.56151pt too wide) in paragraph at lines 275--277
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+ (build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
 Package rerunfilecheck Info: File `SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071
 116.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
@@ -462,16 +552,19 @@ Package rerunfilecheck Info: File `SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 8033 strings out of 494910
- 129400 string characters out of 6179837
- 278656 words of memory out of 5000000
- 11216 multiletter control sequences out of 15000+600000
+ 8993 strings out of 494985
+ 142126 string characters out of 6180355
+ 281095 words of memory out of 5000000
+ 12061 multiletter control sequences out of 15000+600000
  7295 words of font info for 26 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 54i,10n,52p,569b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,10n,52p,569b,873s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -484,11 +577,11 @@ fonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb>
-Output written on build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.pdf (7 
-pages, 6351764 bytes).
+Output written on build/SEEHomework_Chaitany_Hebbal_Jose_Mayoral_071116.pdf (10
+ pages, 6537519 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
