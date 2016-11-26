@@ -65,7 +65,18 @@ Pixel brightness and orientation histogram
 -> Explanation -> Page 35 and 43
 
 
-Random Decision Trees
+Kernel for Binary String for Image Matching
+
+Kernel -> similarity measurement between input points satisfuing some mathematical requirements and possibly capturing the domain knowledge.
+
+Image Kernel -> Binary String image representation. Mapping form input to feature space.
+Binary vectors can be used for representing information content of signals other than images.
+Kernels must satisfy certain mathematical requirements while incorporating the prior knowledge of the application domain.
+
+Kernel for SVM.
+
+Legitim kernels -> Mathematical requirements on K must ensure convexity of a function minimizer on a sum of minimizers.
+			
 
 
 
